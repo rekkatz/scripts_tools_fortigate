@@ -20,5 +20,5 @@ Sintaxis: ./3-search_ip.sh <IP_a_buscar>
 
 4-backup_conf.sh
 ----------------
-Sintaxis: ./4-backup_conf.sh backup
-<br>
+Sintaxis: ./4-backup_conf.sh <path_to_save>
+<br>Ejemplo : ./4-backup.conf.sh ./

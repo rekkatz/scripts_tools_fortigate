@@ -1,6 +1,6 @@
 #!/usr/bin/expect -f
 
-# Variables Client/IP
+# Variables
 set IP [lindex $argv 0];
 set COM [lindex $argv 1];
 set timeout 2;
@@ -13,7 +13,7 @@ log_file -a <PATH_SAVE_LOG>
 puts "############################################"
 puts "#### Añadiendo IP a grupo de Blacklist #####"
 puts "############################################"
-spawn ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=~/.ssh/known_hosts" USER@IP -p 22
+spawn ssh -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=~/.ssh/known_hosts" <USER@IP> -p 22
 expect "password: "
 send "password\r"
 expect "#"

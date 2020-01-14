@@ -20,7 +20,7 @@ Sintaxis: ./3-search_ip.sh <IP_a_buscar>
 
 4-backup_conf.sh
 ----------------
-Sintaxis: ./4-backup_conf.sh <path_to_save>
+Sintaxis: ./4-backup_conf.sh <Ruta>
 <br>Ejemplo : ./4-backup.conf.sh ./
 
 <b>Importante:</b> Para poder realizar backups a través de linea de comandos, necesitaremos habilitar en fortigate SCP.

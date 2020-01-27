@@ -7,7 +7,7 @@ set CONFIG "sys_config"
 set timeout 2;
 
 # Log file
-log_file /home/cristian/logs/backups.log
+log_file <PATH_SAVE_LOG>
 
 # Execution command to client Fortigate CLI
 spawn scp -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=~/.ssh/known_hosts" -P 22 <USER@IP>:$CONFIG $PATH/backup\_$DATE.conf

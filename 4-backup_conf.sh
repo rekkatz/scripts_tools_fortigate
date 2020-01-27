@@ -2,7 +2,7 @@
 
 # Variables definidas
 set PATH [lindex $argv 0];
-set DATE [exec date +%F_%T];
+set DATE [exec date +%d%m%Y_%H%M];
 set CONFIG "sys_config"
 set timeout 2;
 

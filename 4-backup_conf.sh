@@ -13,7 +13,7 @@ log_user 0
 # Execution command to client Fortigate CLI
 spawn scp -o "StrictHostKeyChecking=no" -o "UserKnownHostsFile=~/.ssh/known_hosts" -P 22 <USER@IP>:$CONFIG $PATH/backup\_$DATE.conf
 expect "password: "
-send "admin\r"
+send "password\r"
 puts "#####################################"
 puts "# Realizando Backup a través de SCP #"
 puts "#####################################"
